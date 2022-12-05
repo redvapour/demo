@@ -89,20 +89,33 @@ export default {
     equal() {
       let a = /\+|\-|\*|\÷/;
       let arr = this.processScreen.split(a);
-      let sign = this.processScreen.match(a);
+      let str = this.processScreen;
+      let sign = str.split("").reverse().join("").match(a);
+      if (sign && !arr[1]) {
+        this.resultScreen = arr[0];
+        return;
+      }
       if (!sign) {
         this.resultScreen = this.processScreen;
         return;
       }
+      if (!arr[0]) {
+        arr.shift();
+        arr[0] = -arr[0];
+        console.log(arr[0], arr[1]);
+      }
       switch (sign[0]) {
         case "+":
           this.resultScreen = +arr[0] + +arr[1];
+          this.resultScreen = Math.round(this.resultScreen * 10 ** 8) / 10 ** 8;
           break;
         case "-":
           this.resultScreen = arr[0] - arr[1];
+          this.resultScreen = Math.round(this.resultScreen * 10 ** 8) / 10 ** 8;
           break;
         case "*":
           this.resultScreen = arr[0] * arr[1];
+          this.resultScreen = Math.round(this.resultScreen * 10 ** 8) / 10 ** 8;
           break;
         case "÷":
           if (arr[1] === "0") {
@@ -117,18 +130,27 @@ export default {
       }
     },
     pushNumber(num) {
+      let a = /\+|\-|\*|\÷/;
+      let arr = this.processScreen.split(a);
+      if (this.processScreen === "0" && num !== ".") {
+        this.backspace();
+      }
       if (this.flag) {
-        let a = /\+|\-|\*|\÷/;
-        let arr = this.processScreen.split(a);
         if (arr[1].indexOf(".") !== -1 && num === ".") {
           return;
+        }
+        if (arr[1][0] === "0" && arr[1].length === 1) {
+          if (num === "0") {
+            this.backspace();
+          } else if (num !== "0" && num !== ".") {
+            this.backspace();
+          }
         }
       } else {
         if (this.processScreen.indexOf(".") !== -1 && num === ".") {
           return;
         }
       }
-
       this.processScreen += num;
       this.resultScreen = "";
       if (this.processScreen.length > 12) {
