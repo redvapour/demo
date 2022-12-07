@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04_文字排版</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- h标题 1-6-->
+      <h1>h1 Bootstrap 标题</h1>
+      <h2>h2 Bootstrap 标题</h2>
+      <div class="h3">h3 Bootstrap 标题</div>
+      <div class="h4">h4 Bootstrap 标题</div>
+      <!-- display放大加粗 1-4-->
+      <h1 class="display-1">h1 Bootstrap 标题</h1>
+      <h1 class="display-2">h1 Bootstrap 标题</h1>
+      <!-- small副标题 -->
+      <h1>h1 标题 <small>副标题</small></h1>
+      <!-- mark高亮文字 -->
+      <p>使用 mark 元素来 <mark>高亮</mark> 文本。</p>
+      <!-- abbr底部虚线 title内为悬浮解释 -->
+      <p>
+        The <abbr title="World Health Organization">WHO</abbr> was founded in
+        1948.
+      </p>
+      <!-- blockquote引用 -->
+      <blockquote class="blockquote">
+        <p>身是菩提树，心如明镜台；时时勤拂拭，莫使有尘埃。</p>
+        <footer class="blockquote-footer">神秀</footer>
+      </blockquote>
+      <!-- dl列表 -->
+      <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+      <!-- code标红 -->
+      <p>
+        以下 HTML 元素: <code>span</code>, <code>section</code>, 和
+        <code>div</code> 用于定义部分文档内容。
+      </p>
+      <!-- kdd快捷键提示 -->
+      <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+      <!-- pre保存原有格式 -->
+      <pre>
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks.
+        </pre
+      >
+      <table class="table">
+        <tbody>
+          <tr>
+            <th style="width: 25%">类名</th>
+            <th style="width: 63%">描述</th>
+          </tr>
+
+          <tr>
+            <td><span class="marked">.lead</span></td>
+            <td>让段落更突出</td>
+          </tr>
+          <tr>
+            <td><span class="marked">.small</span></td>
+            <td>指定更小文本 (为父元素的 85% )</td>
+          </tr>
+          <tr>
+            <td><span class="marked">.text-start</span></td>
+            <td>左对齐</td>
+          </tr>
+          <tr>
+            <td><span class="marked">.text-center</span></td>
+            <td>居中</td>
+          </tr>
+          <tr>
+            <td><span class="marked">.text-end</span></td>
+            <td>右对齐</td>
+          </tr>
+          <tr>
+            <td><span class="marked">.text-justify</span></td>
+            <td>设定文本对齐,段落中超出屏幕部分文字自动换行</td>
+          </tr>
+          <tr>
+            <td><span class="marked">.text-nowrap</span></td>
+            <td>段落中超出屏幕部分不换行</td>
+          </tr>
+          <tr>
+            <td><span class="marked">.text-lowercase</span></td>
+            <td>设定文本小写</td>
+          </tr>
+          <tr>
+            <td><span class="marked">.text-uppercase</span></td>
+            <td>设定文本大写</td>
+          </tr>
+          <tr>
+            <td><span class="marked">.text-capitalize</span></td>
+            <td>设定单词首字母大写</td>
+          </tr>
+          <tr>
+            <td><span class="marked">.initialism</span></td>
+            <td>
+              显示在 &lt;abbr&gt;
+              元素中的文本以小号字体展示，且可以将小写字母转换为大写字母
+            </td>
+          </tr>
+          <tr>
+            <td><span class="marked">.list-unstyled</span></td>
+            <td>
+              移除默认的列表样式，列表项中左对齐 ( &lt;ul&gt; 和 &lt;ol&gt;
+              中)。 这个类仅适用于直接子列表项
+              (如果需要移除嵌套的列表项，你需要在嵌套的列表中使用该样式)
+            </td>
+          </tr>
+          <tr>
+            <td><span class="marked">.list-inline</span></td>
+            <td>将所有列表项放置同一行</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+</html>

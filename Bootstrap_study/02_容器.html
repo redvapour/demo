@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02_容器</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- 固定宽度类名 -->
+    <div class="container" style="background-color: rgba(219, 93, 93, 0.712)">
+      <h1 class="text-center text-white">固定宽度，两层有空白</h1>
+    </div>
+    <!-- 充满屏幕类名 -->
+    <div
+      class="container-fluid"
+      style="background-color: rgba(56, 56, 146, 0.61)"
+    >
+      <h1 class="text-center text-white">充满屏幕</h1>
+    </div>
+    <!-- 内边距 padding-->
+    <div
+      class="container py-4"
+      style="background-color: rgba(217, 219, 93, 0.712)"
+    >
+      <h1 class="text-center text-white">上下内边距</h1>
+    </div>
+    <!-- 外边距、颜色 -->
+    <div class="container my-5 bg-dark">
+      <h1 class="text-center text-white">上下外边距</h1>
+    </div>
+    <!-- 响应式容器 -->
+    <div class="container-sm">.container-sm</div>
+    <div class="container-md">.container-md</div>
+    <div class="container-lg">.container-lg</div>
+    <div class="container-xl">.container-xl</div>
+    <div class="container-xxl">.container-xxl</div>
+    <hr />
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>
+            超小屏幕<br />
+            &lt;576px
+          </th>
+          <th>
+            小屏幕<br />
+            ≥576px
+          </th>
+          <th>
+            中等屏幕<br />
+            ≥768px
+          </th>
+          <th>
+            大屏幕<br />
+            ≥992px
+          </th>
+          <th>
+            特大屏幕<br />
+            ≥1200px
+          </th>
+          <th>
+            超级大屏幕<br />
+            ≥1400px
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>.container-sm</code></td>
+          <td>100%</td>
+          <td>540px</td>
+          <td>720px</td>
+          <td>960px</td>
+          <td>1140px</td>
+          <td>1320px</td>
+        </tr>
+        <tr>
+          <td><code>.container-md</code></td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>720px</td>
+          <td>960px</td>
+          <td>1140px</td>
+          <td>1320px</td>
+        </tr>
+        <tr>
+          <td><code>.container-lg</code></td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>960px</td>
+          <td>1140px</td>
+          <td>1320px</td>
+        </tr>
+        <tr>
+          <td><code>.container-xl</code></td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>1140px</td>
+          <td>1320px</td>
+        </tr>
+        <tr>
+          <td><code>.container-xxl</code></td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>1320px</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+</html>

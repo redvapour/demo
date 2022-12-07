@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03_网格系统</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- 等宽列，自动排列 -->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="col p-3 bg-primary text-white">等宽列，自动排列</div>
+        <div class="col p-3 bg-dark text-white"></div>
+        <div class="col p-3 bg-primary text-white"></div>
+      </div>
+    </div>
+    <!-- 等宽列，手动设置 过小时上下排列-->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="col-sm-3 p-3 bg-primary text-white">等宽列，手动设置</div>
+        <div class="col-sm-3 p-3 bg-dark text-white"></div>
+        <div class="col-sm-3 p-3 bg-primary text-white"></div>
+        <div class="col-sm-3 p-3 bg-dark text-white"></div>
+      </div>
+    </div>
+    <!-- 不等宽排列 -->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="col-sm-4 p-3 bg-primary text-white">不等宽排列</div>
+        <div class="col-sm-8 p-3 bg-dark text-white"></div>
+      </div>
+    </div>
+    <!-- 只设一列宽,其余自适应 -->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="col p-3 bg-primary text-white">只设一列宽,其余自适应</div>
+        <div class="col-sm-3 p-3 bg-dark text-white"></div>
+        <div class="col p-3 bg-primary text-white"></div>
+      </div>
+    </div>
+    <!-- 不同尺寸适配 -->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div
+          class="col-sm-3 col-md-6 col-lg-4 col-xl-2 p-3 bg-primary text-white"
+        >
+          不同尺寸适配
+        </div>
+        <div
+          class="col-sm-9 col-md-6 col-lg-8 col-xl-10 p-3 bg-dark text-white"
+        ></div>
+      </div>
+    </div>
+    <!-- 列嵌套 -->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="col-2 p-3 bg-primary text-white">列嵌套</div>
+        <div class="col-10 bg-dark p-4">
+          <div class="row">
+            <div class="col-6 bg-light p-2"></div>
+            <div class="col-6 bg-secondary p-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 列偏移 -->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="col-6 p-3 bg-primary text-white">列偏移</div>
+        <div class="col-sm-3 offset-3 bg-dark"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+</html>

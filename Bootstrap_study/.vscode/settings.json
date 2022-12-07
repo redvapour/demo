@@ -1,0 +1,15 @@
+{
+  "editor.quickSuggestions": {
+    "other": true,
+
+    "comments": true,
+
+    "strings": true
+  },
+
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+  "files.associations": {
+    "*.vue": "html"
+  }
+}

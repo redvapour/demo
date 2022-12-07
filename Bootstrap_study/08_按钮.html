@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08_按钮</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <style>
+      .btn-bd-primary {
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet);
+        --bs-btn-border-color: var(--bd-violet);
+        --bs-btn-border-radius: 0.5rem;
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+        --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+        --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-3">
+      <!-- 标准按钮 -->
+      <button type="button" class="btn">基本按钮</button>
+      <button type="button" class="btn btn-primary">主要按钮</button>
+      <button type="button" class="btn btn-secondary">次要按钮</button>
+      <button type="button" class="btn btn-success">成功</button>
+      <button type="button" class="btn btn-info">信息</button>
+      <button type="button" class="btn btn-warning">警告</button>
+      <button type="button" class="btn btn-danger">危险</button>
+      <button type="button" class="btn btn-dark">黑色</button>
+      <button type="button" class="btn btn-light">浅色</button>
+      <button type="button" class="btn btn-link">链接</button>
+      <hr />
+      <!-- 在别的标签上 -->
+      <a href="#" class="btn btn-info" role="button">链接按钮</a>
+      <button type="button" class="btn btn-info">按钮</button>
+      <input type="button" class="btn btn-info" value="输入框按钮" />
+      <hr />
+      <!-- 设置边框 -->
+      <button type="button" class="btn btn-outline-primary">主要按钮</button>
+      <hr />
+      <!-- 不同大小 -->
+      <button type="button" class="btn btn-primary btn-lg">大号按钮</button>
+      <button type="button" class="btn btn-primary">默认按钮</button>
+      <button type="button" class="btn btn-primary btn-sm">小号按钮</button>
+      <hr />
+      <!-- 多个块级按钮 -->
+      <div class="d-grid gap-3">
+        <button type="button" class="btn btn-primary btn-block">
+          100% 宽度的按钮
+        </button>
+        <button type="button" class="btn btn-primary btn-block">
+          100% 宽度的按钮
+        </button>
+        <button type="button" class="btn btn-primary btn-block">
+          100% 宽度的按钮
+        </button>
+      </div>
+      <hr />
+      <!-- 激活与禁用 disable与active-->
+      <button type="button" class="btn btn-primary active">点击后的按钮</button>
+      <button type="button" class="btn btn-primary" disabled>
+        禁止点击的按钮
+      </button>
+      <a href="#" class="btn btn-primary disabled">禁止点击的链接</a>
+      <hr />
+      <!-- 加载按钮 spinner-border转圈  spinner-grow闪烁 spinner-border-sm大小-->
+      <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+      </button>
+
+      <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading..
+      </button>
+
+      <button class="btn btn-primary" disabled>
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading..
+      </button>
+
+      <button class="btn btn-primary" disabled>
+        <span class="spinner-grow spinner-grow-sm"></span>
+        Loading..
+      </button>
+    </div>
+  </body>
+  <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+</html>
