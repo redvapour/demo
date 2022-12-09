@@ -1,8 +1,8 @@
 /* 第一块 */
 .background-img {
-  height: 1060px;
   background-image: url(./img/bg.jpg);
-  background-size: 100%;
+  opacity: 0.8;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .logo {
@@ -13,20 +13,23 @@
   padding: 135px 0;
 }
 .main-content h2 {
-  text-align: center;
+  /* text-align: center; */
   color: #f4048f;
   font-size: 35px;
 }
 .main-content h1 {
-  text-align: center;
+  /* text-align: center; */
   color: #fc04d9cc;
-  font-size: 40px;
+  font-size: 50px;
 }
 .main-content p {
   height: 200px;
-  text-align: center;
+  /* text-align: center; */
   color: #000;
   font-size: 20px;
+}
+.main-content button {
+  border: dashed 5px #0d6efd;
 }
 .main-content button:hover {
   color: #0d6efd;
@@ -52,8 +55,8 @@
 }
 /* 第三块 */
 .partner {
-  height: 380px;
-  margin-top: 100px;
+  /* height: 380px; */
+  margin: 100px 0;
 }
 .partner button {
   color: #0d6efd;
@@ -65,47 +68,51 @@
   background-color: #0d6efd;
 }
 .logo-group {
-  width: 400px;
-  height: 360px;
+  /* width: 400px;
+  height: 360px; */
   border: solid 3px #4b4f58;
   border-radius: 20px;
   background-color: #f4f3f4;
 }
-.logos {
+/* .logos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 20px;
-}
-.logos img {
-  width: 80px;
+} */
+/* .logos img {
+  width: 8px;
   height: 80px;
-}
+} */
 
 /* 第四块 */
 .helper {
-  height: 780px;
+  /* height: 780px; */
   background-color: #feecd4;
+  /* padding: 100px 0; */
 }
 .helper h2 {
-  height: 60px;
-  text-align: center;
-  padding: 50px 0;
+  /* height: 60px;
+  text-align: center; 
+  padding: 50px 0;*/
 }
 .left-box,
 .right-box {
-  height: 600px;
-  width: 510px;
+  /* width: 510px; */
+
   margin: 25px;
   padding: 20px;
   background-color: #fff;
   border: solid 0px #000;
   border-width: 0 5px 5px 0;
 }
+
 .left-box h1 {
+  font-size: 30px;
   color: #f4048f;
 }
 .right-box h1 {
+  font-size: 30px;
   color: #d71a1a;
 }
 .helper h3 {
@@ -138,13 +145,14 @@
 
 /* 第五块 */
 .introduce {
-  height: 300px;
+  /* height: 300px; */
+  margin: 200px 0;
 }
 
 .register {
-  width: 780px;
-  height: 400px;
-  margin: 0 auto;
+  /* width: 780px; */
+  /* height: 400px; */
+  /* margin: 0 auto; */
 }
 /* 第六块 */
 .footer {
