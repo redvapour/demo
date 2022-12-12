@@ -40,9 +40,6 @@
   color: #333;
 }
 
-.main-content {
-  padding: 135px 0;
-}
 .main-content h2 {
   /* text-align: center; */
   color: #fc0492;
@@ -63,7 +60,7 @@
   mix-blend-mode: multiply;
 }
 .main-content p {
-  height: 250px;
+  height: 200px;
   /* text-align: center; */
   column-gap: 0px;
   text-align: left;
@@ -75,6 +72,14 @@
   letter-spacing: 1px;
   word-spacing: 5px;
   text-shadow: 2px 5px 7px rgb(253 253 253 / 95%);
+}
+@media screen and (min-width: 768px) {
+  .main-content {
+    padding: 135px 0;
+  }
+  .main-content p {
+    height: 250px;
+  }
 }
 .main-content button {
   border: dashed 2px #0d6efd;
@@ -138,8 +143,8 @@
 } */
 .logos img {
   padding: 0;
-  width: 70px;
-  height: 70px;
+  width: 100%;
+  height: 100%;
 }
 .partner h6 {
   font-family: "Courgette", cursive;
@@ -164,8 +169,8 @@
 .left-box,
 .right-box {
   /* width: 510px; */
-  margin: 25px;
-  padding: 20px;
+  margin-bottom: 25px;
+  /* padding: 20px; */
   background-color: #fff;
   border: solid 0px #000;
   border-width: 0 5px 5px 0;
@@ -174,12 +179,14 @@
   .left-box,
   .right-box {
     height: 480px;
+    margin: 25px;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 768px) {
   .left-box,
   .right-box {
     height: 666px;
+    margin: 25px;
   }
 }
 
@@ -243,7 +250,7 @@
 /* 第五块 */
 .introduce {
   /* height: 300px; */
-  margin: 200px 0;
+  margin: 100px 0;
 }
 .introduce h2 {
   color: #006dff;
@@ -258,12 +265,27 @@
   font-size: 20px;
   font-weight: 300;
 }
+.introduce img {
+  width: 100%;
+}
 
 .register {
   /* width: 780px; */
   /* height: 400px; */
   /* margin: 0 auto; */
 }
+.register input,
+.register textarea {
+  border-color: #999999;
+  border-width: 2px 2px 2px 2px;
+  border-radius: 10px 10px 10px 10px;
+}
+.register input:focus,
+.register textarea:focus {
+  border-color: #999999;
+  box-shadow: none;
+}
+
 /* 第六块 */
 .footer {
   height: 200px;
