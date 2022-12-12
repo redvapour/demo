@@ -13,37 +13,38 @@
     <!-- 第一块 -->
     <div class="container-fluid background-img">
       <div class="cover-img"></div>
+      <!-- logo和导航 -->
       <div class="container-xl">
-        <div class="row p-3">
+        <div class="row p-3 justify-content-between">
           <div class="col-md-4">
-            <img src="./img/logo.png" alt="logo" class="logo mx-auto d-block" />
+            <img
+              src="./img/logo.png"
+              alt="logo"
+              class="logo ms-lg-5 mx-auto d-block"
+            />
           </div>
-          <!-- justify-content-between加哪都不生效 有可能和nav内置冲突 -->
-          <div class="col-6 offset-2 align-self-center">
+          <div class="col-5 align-self-center me-5">
             <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a
-                      class="nav-link text-primary"
-                      aria-current="page"
-                      href="#"
-                      >Home</a
-                    >
-                    <a class="nav-link text-primary" href="#">Solution</a>
-                    <a class="nav-link text-primary" href="#"
-                      >Join Our Discord Server</a
-                    >
-                  </div>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNavAltMarkup"
+              >
+                <div class="navbar-nav navigation">
+                  <a class="nav-link m-1" href="#">Home</a>
+                  <a class="nav-link m-1" href="#">Solution</a>
+                  <a class="nav-link m-1 bi bi-chat-left" href="#">
+                    Join Our Discord Server</a
+                  >
                 </div>
               </div>
             </nav>
           </div>
         </div>
       </div>
+      <!-- 主体内容 -->
       <div class="container-xl main-content">
-        <div class="row py-5">
-          <div class="col-lg-4 col-md-4 text-center text-md-start">
+        <div class="row p-3 justify-content-between">
+          <div class="col-lg-4 col-md-4 text-center text-md-start ms-lg-5">
             <h2 class="text-center">Hey Creators,</h2>
             <h1>Running Out of Creative Juice?</h1>
             <p>
@@ -52,12 +53,15 @@
               process – as minimal or as powerful as you need it to be.
             </p>
             <div class="d-grid gap-2 col-lg-6 col-md-8 col-6 mx-auto mt-5">
-              <button class="btn btn-primary rounded-pill" type="button">
+              <button
+                class="btn btn-primary rounded-pill bi bi-person-fill"
+                type="button"
+              >
                 Sign Up for Trial
               </button>
             </div>
           </div>
-          <div class="col-8 mx-auto d-none d-xl-block d-lg-block text-center">
+          <div class="col-6 d-none d-xl-block d-lg-block text-center me-5">
             <img class="rounded" src="./img/动图.webp" alt="动图" />
           </div>
         </div>
@@ -65,18 +69,22 @@
     </div>
 
     <!-- 第二块 -->
-    <div class="container-fluid">
-      <div class="row wait align-items-md-center">
-        <div class="col-md-4 offset-md-7 text-center text-md-start">
-          <h3>In 2 Mins</h3>
-          <h1>Let me Intro CIX...</h1>
+    <div class="container-fluid wait">
+      <div class="container-xl h-100">
+        <div
+          class="row align-items-md-center align-items-start justify-content-end h-100"
+        >
+          <div class="col-md-4 text-center text-md-start me-lg-5">
+            <h2>In 2 Mins</h2>
+            <h1>Let me Intro CIX...</h1>
+          </div>
         </div>
       </div>
     </div>
     <!-- 第三块 -->
-    <div class="container-fluid">
-      <div class="row align-items-center partner">
-        <div class="col-lg-3 offset-lg-3 col-md-6 pt-5">
+    <div class="container partner">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 col-md-6 p-3 ms-lg-5">
           <h1 class="text-center text-md-start">Hang Out with Us on Discord</h1>
           <p class="text-secondary">
             See how we make it easier for you to focus more on content creation.
@@ -87,76 +95,57 @@
           <p class="text-secondary">
             2) Get more tips to generate content effortlessly.
           </p>
-          <div class="d-grid gap-2 col-md-8 col-5 mt-5 mx-auto">
-            <button class="btn btn-primary rounded-pill" type="button">
+          <div class="d-grid gap-2 col-md-6 col-5 mt-5 mx-auto">
+            <button
+              class="btn btn-primary rounded-pill bi bi-chat-left"
+              type="button"
+            >
               Visit Our Discord
             </button>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 offset-lg-1 offset-md-2 logo-group">
-          <h6 class="text-center p-3">Connect With</h6>
-          <div class="container p-3">
-            <div class="row">
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
-              <img
-                class="col-md-6 col-lg-3 col-3 p-1"
-                src="./img/logo-group.png"
-                alt="logo-group"
-              />
+        <div class="col-lg-4 col-md-4 offset-lg-1 offset-md-2 me-lg-5">
+          <div class="logo-group">
+            <h6 class="text-center p-3">Connect With</h6>
+            <div class="container p-3">
+              <div class="row logos">
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group1.png" alt="logo-group" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group2.png" alt="logo-group" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group3.png " alt="logo-group" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group4.png" alt="logo-group" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group5.png" alt="logo-group" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group6.png" alt="logo-group" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group7.png" alt="logo-group" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group8.png" alt="logo-group" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group9.png" alt="logo-group" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group10.png" alt="logo-group" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group11.png" alt="logo-group" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-3 my-3">
+                  <img src="./img/logo-group12.png" alt="logo-group" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -164,53 +153,119 @@
     </div>
     <!-- 第四块 -->
     <div class="container-fluid helper p-3">
-      <h2 class="text-center p-4">As much (or as little) help as you want</h2>
-      <div class="container-fluid">
-        <div class="row align-items-stretch">
-          <!-- margin和offset不能同时设置？ -->
-          <div class="col-lg-5 col-md-6 offset-lg-1 clearfix">
-            <div class="left-box p-3">
-              <h1 class="p-3 text-sm-center text-md-start">
-                Youtuber & Blogger
-              </h1>
-              <h3>Less Searches, More Creative</h3>
-              <p>
-                “Creativity is seeing what others see and thinking what no one
-                else ever thought.” – Albert Einstein
-              </p>
-              <div class="describe">
-                <a href="#">Inspiration & Idea Collection </a>
-              </div>
-              <div class="describe">
-                <a href="#">Collaborate with Your Team </a>
-              </div>
-              <div class="describe">
-                <a href="#">SEO & Social Management </a>
-              </div>
-              <div class="describe mb-5">
-                <a href="#">Content Monitoring & Review </a>
+      <div class="container">
+        <h2 class="text-center p-4">As much (or as little) help as you want</h2>
+        <div class="container-fluid">
+          <div class="row align-items-stretch">
+            <!-- margin和offset不能同时设置？ -->
+            <div class="col-lg-5 col-md-6 offset-lg-1 clearfix">
+              <div class="left-box p-3">
+                <h1 class="p-3 text-sm-center text-md-start">
+                  Youtuber & Blogger
+                </h1>
+                <h3>Less Searches, More Creative</h3>
+                <p>
+                  “Creativity is seeing what others see and thinking what no one
+                  else ever thought.” – Albert Einstein
+                </p>
+                <div class="describe container pt-3">
+                  <div class="row px-3">
+                    <div class="col-10 text-center">
+                      <a href="#">Inspiration & Idea Collection </a>
+                    </div>
+                    <div class="col-2 bi bi-hand-index-thumb icon"></div>
+                  </div>
+                </div>
+                <div class="describe container pt-3">
+                  <div class="row px-3">
+                    <div class="col-10 text-center">
+                      <a href="#">Collaborate with Your Team </a>
+                    </div>
+                    <div class="col-2 bi bi-hand-index-thumb icon"></div>
+                  </div>
+                </div>
+                <div class="describe container pt-3">
+                  <div class="row px-3">
+                    <div class="col-10 text-center">
+                      <a href="#">SEO & Social Management </a>
+                    </div>
+                    <div class="col-2 bi bi-hand-index-thumb icon"></div>
+                  </div>
+                </div>
+                <div class="describe container mb-5 pt-3">
+                  <div class="row px-3">
+                    <div class="col-10 text-center">
+                      <a href="#">Content Monitoring & Review </a>
+                    </div>
+                    <div class="col-2 bi bi-hand-index-thumb icon"></div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-5 col-md-6 clearfix">
-            <div class="right-box p-3">
-              <h1 class="p-3 text-sm-center text-md-start">Marketers</h1>
-              <h3>Smoother Creation, Easier Curation</h3>
-              <p>
-                “Content builds relationships. Relationships are built on trust.
-                Trust drives revenue.” — Andrew Davis
-              </p>
-              <div class="describe">
-                <a href="#">Planing with Confidence </a>
-              </div>
-              <div class="describe">
-                <a href="#">Partner with Suitable KOL </a>
-              </div>
-              <div class="describe">
-                <a href="#">Content Curation on Track </a>
-              </div>
-              <div class="describe mb-5">
-                <a href="#">Report at One Click Away​ </a>
+            <div class="col-lg-5 col-md-6 clearfix">
+              <div class="right-box p-3">
+                <h1 class="p-3 text-sm-center text-md-start">Marketers</h1>
+                <h3>Smoother Creation, Easier Curation</h3>
+                <p>
+                  “Content builds relationships. Relationships are built on
+                  trust. Trust drives revenue.” — Andrew Davis
+                </p>
+                <div class="describe container pt-3">
+                  <div class="row px-3">
+                    <div class="col-9 text-center">
+                      <a href="#">Planing with Confidence </a>
+                    </div>
+                    <div class="col-3 d-flex icon">
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="describe container pt-3">
+                  <div class="row px-3">
+                    <div class="col-9 text-center">
+                      <a href="#">Partner with Suitable KOL </a>
+                    </div>
+                    <div class="col-3 d-flex icon">
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="describe container pt-3">
+                  <div class="row px-3">
+                    <div class="col-9 text-center">
+                      <a href="#">Content Curation on Track </a>
+                    </div>
+                    <div class="col-3 d-flex icon">
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="describe container mb-5 pt-3">
+                  <div class="row px-3">
+                    <div class="col-9 text-center">
+                      <a href="#">Report at One Click Away </a>
+                    </div>
+                    <div class="col-3 d-flex icon">
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                      <div class="bi bi-star-fill"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -218,9 +273,9 @@
       </div>
     </div>
     <!-- 第五块 -->
-    <div class="container-fluid">
+    <div class="container">
       <div class="row introduce">
-        <div class="col-lg-3 offset-lg-2 align-self-center">
+        <div class="col-lg-5 ms-lg-5 align-self-center">
           <h2 class="text-primary">Compile</h2>
           <p class="text-secondary">
             Cix can choose up to 10 sources of inspiration, such as TWITTER/
@@ -229,7 +284,7 @@
         </div>
       </div>
       <div class="row introduce">
-        <div class="col-md-3 col-12 offset-md-7 align-self-center">
+        <div class="col-md-5 col-12 offset-md-7 align-self-center me-lg-5">
           <h2 class="text-primary">Streamline</h2>
           <p class="text-secondary">
             Build your own information processing workflow to help you stay on
@@ -238,7 +293,7 @@
         </div>
       </div>
       <div class="row introduce">
-        <div class="col-lg-3 offset-lg-2 align-self-center">
+        <div class="col-lg-5 ms-lg-5 align-self-center">
           <h2 class="text-primary">Collaborate</h2>
           <p class="text-secondary">
             A full range of convenient tools with effortless sharing between
@@ -307,14 +362,21 @@
     </div>
     <!-- 第六块 -->
     <div class="container-fluid footer">
-      <div class="container">
-        <div class="row p-3 align-items-center">
-          <div class="col-4">
-            <img src="./img/logo.png" alt="logo" class="footer-logo" />
+      <div class="footer-cover-img"></div>
+      <div class="container-xl h-100">
+        <div class="row p-3 justify-content-between h-100 align-items-center">
+          <div class="col-md-4">
+            <img
+              src="./img/logo.png"
+              alt="logo"
+              class="footer-logo ms-lg-5 mx-md-0 mx-auto d-block"
+            />
           </div>
-          <div class="col text-end">
-            <div class="text-light">Join us on Discord</div>
-            <div class="text-light">
+          <div
+            class="col-md-8 align-self-center text-md-end text-center me-lg-5 mx-auto d-block join"
+          >
+            <div>Join us on Discord</div>
+            <div>
               @2022 CIX Manage cookies
               <a href="#">Terms of Service</a>
               <a href="#">Privacy</a>
